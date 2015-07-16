@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   get 'home', 'about', 'math', 'lottery', controller: 'pages'
 
   get 'pages2/home'
-
   get 'pages2/about'
-  
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

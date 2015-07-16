@@ -8,6 +8,9 @@ class PagesController < ApplicationController
   	@age= params['age']
   	# @me = params['name']
   	# render 'pages/about'
+
+  	# change layout for backstage
+	render 'pages/about', layout: 'admin'
   end
 
   def math
@@ -18,4 +21,5 @@ class PagesController < ApplicationController
   	@numbers = (1..46).to_a.sample(6)
   	# render 'pages/lottery'  	
   end
+
 end
