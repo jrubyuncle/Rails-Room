@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#home'
-  get 'home', 'about', 'math', controller: 'pages'
+  get 'home', 'about', 'math', 'lottery', controller: 'pages'
 
   get 'pages2/home'
 
