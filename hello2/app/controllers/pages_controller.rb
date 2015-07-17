@@ -11,7 +11,7 @@ class PagesController < ApplicationController
   	# render 'pages/about'
 
   	# change layout for backstage
-	render 'pages/about', layout: 'admin'
+	  # render 'pages/about', layout: 'admin'
   end
 
   def math

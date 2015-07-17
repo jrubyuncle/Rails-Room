@@ -1,9 +1,17 @@
 <!-- app/views/shared/_navbar.html.erb -->
 <ul>
-	<li><a href="/">Home Page</a></li>
-	<li><a href="/about">About</a></li>
-	<li><a href="/lottery">Lottery</a></li>
+	<li><a href="<%= root_path %>">Home Page (old)</a></li>
+	<li><a href="<%= about_path %>">About (old)</a></li>
+	<li><a href="<%= lottery_path %>">Lottery (old)</a></li>
 </ul>
+
+<ul>
+<%= nav_li "Index Page", root_path %>
+<%= nav_li "About Page", about_path %>
+<%= nav_li "Lottery Page", lottery_path %>
+</ul>
+
+<%#= product_li "GG" %>
 
 <% line_number.times do %>
 <hr>
